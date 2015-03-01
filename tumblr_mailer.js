@@ -33,7 +33,7 @@ client.posts('castadon.tumblr.com', function(err, blog){
 	  
 	  var latestPosts = [];
 	  var oneWeekAgo = new Date();
-	  oneWeekAgo.setDate(oneWeekAgo.getDate() - 27);
+	  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
 	  blog.posts.forEach(function(post){
 	  	if ( oneWeekAgo.getTime() < (post.timestamp)*1000 )
